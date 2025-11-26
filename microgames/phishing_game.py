@@ -12,5 +12,5 @@ PHISHING_SCENARIOS = [
 
 def phishing_detector(score, shapes, screen, font, small_font):
     scenario, correct = random.choice(PHISHING_SCENARIOS)
-    key = wait_for_key([pygame.K_y, pygame.K_n], 7, score, scenario, screen, font, small_font, shapes)
+    key = wait_for_key([pygame.K_y, pygame.K_n], 11, score, scenario, screen, font, small_font, shapes)
     return key == correct

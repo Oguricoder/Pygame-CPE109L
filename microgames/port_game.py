@@ -12,8 +12,8 @@ PORT_SCENARIOS = [
 
 def port_panic(score, shapes, screen, font, small_font):
     scenario, keys = random.choice(PORT_SCENARIOS)
-    key1 = wait_for_key([keys[0]], 3, score, scenario, screen, font, small_font, shapes)
+    key1 = wait_for_key([keys[0]], 6, score, scenario, screen, font, small_font, shapes)
     if key1 != keys[0]:
         return False
-    key2 = wait_for_key([keys[1]], 3, score, scenario, screen, font, small_font, shapes)
+    key2 = wait_for_key([keys[1]], 6, score, scenario, screen, font, small_font, shapes)
     return key2 == keys[1]

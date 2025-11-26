@@ -14,5 +14,5 @@ ENCRYPTION_SCENARIOS = [
 def encryption_match(score, shapes, screen, font, small_font):
     scenario, correct = random.choice(ENCRYPTION_SCENARIOS)
     instructions = scenario + ["(Press 1/2/3)"]
-    key = wait_for_key([pygame.K_1, pygame.K_2, pygame.K_3], 7, score, instructions, screen, font, small_font, shapes)
+    key = wait_for_key([pygame.K_1, pygame.K_2, pygame.K_3], 11, score, instructions, screen, font, small_font, shapes)
     return key == correct
